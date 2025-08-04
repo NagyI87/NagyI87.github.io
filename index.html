@@ -1,104 +1,196 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagy István 6. házi feladat</title>
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  </head>
-  <body>
-    <div class="content">
-      <header><h1 class="animate__animated animate__headShake">Grid alkalmazása a gyakorlatban </h1></header>
-      <nav>
-        <ul>
-          <li><a href="content/menu1.html">Menü1</a></li>
-          <li><a href="content/menu2.html">Menü2</a></li>
-        </ul>
-      </nav>
-      <main>
-        <article>
-          <h2>Állatvilág</h2>
-          <figure>
-            <picture>
-              <img src="img/kutyus.jpg" alt="kutyuli" />
-            </picture>
-            <figcaption>Kölyök Corgi</figcaption>
-          </figure>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            itaque inventore dolore, pariatur aut accusamus dolor adipisci. Qui
-            consequatur voluptas, dolorum vitae et quaerat odio. Necessitatibus
-            in ratione veritatis quaerat!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet
-            dignissimos, placeat saepe suscipit beatae illo ducimus. Voluptates,
-            doloremque reprehenderit iure alias ipsam, porro quaerat deleniti,
-            accusamus aliquam magnam doloribus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            inventore ex repellendus fuga neque ut saepe veniam maxime optio.
-            Tempore dolore perferendis ad molestias atque suscipit dolorem eius,
-            illum exercitationem!
-          </p>
-        </article>
-        <article>
-          <h2>Starcraft</h2>
-          <figure>
-            <picture>
-              <img src="img/starcraft.jpg" alt="Battle Cruiser" />
-            </picture>
-            <figcaption>Battle Cruiser</figcaption>
-          </figure>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            itaque inventore dolore, pariatur aut accusamus dolor adipisci. Qui
-            consequatur voluptas, dolorum vitae et quaerat odio. Necessitatibus
-            in ratione veritatis quaerat!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet
-            dignissimos, placeat saepe suscipit beatae illo ducimus. Voluptates,
-            doloremque reprehenderit iure alias ipsam, porro quaerat deleniti,
-            accusamus aliquam magnam doloribus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            inventore ex repellendus fuga neque ut saepe veniam maxime optio.
-            Tempore dolore perferendis ad molestias atque suscipit dolorem eius,
-            illum exercitationem!
-          </p>
-        </article>
-      </main>
-      <aside>
-        <article class="asidearticale">
-          <h4>Oldalsó cikk 1</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            perspiciatis laborum, corrupti tempora officiis iste, quasi ratione
-            accusamus nisi obcaecati culpa aut officia ut magnam iure? Eos
-            aliquid repellat error.
-          </p>
-        </article>
-        <article class="asidearticale">
-          <h4>Oldalsó cikk 2</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo
-            aliquid possimus eum, placeat et iure nihil itaque reiciendis
-            temporibus id debitis ullam expedita quae similique assumenda,
-            molestiae non? Aliquam?
-          </p>
-        </article>
-      </aside>
-      <footer>
-        <p>Ez itt a footer.</p>
-        <p style="font-size: 12px">Copyright, stb.</p>
-      </footer>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagy István házifeladat</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header></header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#s1">Balaton</a></li>
+                    <li><a href="#s2">Tisza-tó</a></li>
+                    <li><a href="#s3">Szeledi-tó</a></li>
+                </ul>
+            </nav>
+            <form form action="feldolgoz.php" method="POST" enctype="multipart/form-data">
+                <div class="formdiv" id="betumeret">Kérem, töltse ki a jelentkezési űrlapot:</div>
+                <div class="formdiv">
+                    <label for="username">Név: </label> <br>
+                    <input id="username" type="text" name="username" required>
+                </div>
+                <div class="formdiv">
+                    <label for="useremail">Email: </label> <br>
+                    <input id="useremail" type="email" name="useremail">
+                </div>
+                <div class="formdiv">
+                    <label for="usertelephone">Telefon: </label> <br>
+                    <input id="usertelephone" type="tel" placeholder="pl.: 06 30 3339 446" name="usertelephone" required>
+                </div>
+                <div class="formdiv">
+                    <label for="lake">Melyik tó érdekli? </label> <br>
+                    <select id="lake" required>
+                        <option value="Balaton">Balaton</option>
+                        <option value="Tisza_lake">Tisza-tó</option>
+                        <option value="Szelidi_lake">Szelidi-tó</option>
+                    </select>
+                </div>
+                <div class="formdiv">
+                    <fieldset>
+                        <legend>Milyen szállást keres?</legend>
+                        <div class="subformdiv">
+                            <label for="hotel">Szálloda </label>
+                            <input id="hotel" type="checkbox" name="hotel">
+                        </div>
+                        <div class="subformdiv">
+                            <label for="apartman">Apartmanház</label>
+                            <input id="apartman" type="checkbox" name="apartman">
+                        </div>
+                        <div class="subformdiv">
+                            <label for="camping">Kemping</label>
+                            <input id="camping" type="checkbox" name="camping">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="formdiv">
+                    <fieldset>
+                        <legend>Milyen ellátás legyen?</legend>
+                        <div class="subformdiv">
+                            <label for="full">teljes</label>
+                            <input id="full" type="radio" name="catering">
+                        </div>
+                        <div class="subformdiv">
+                            <label for="half-board">fél-panzió</label>
+                            <input id="half-borad" type="radio" name="catering">
+                        </div>
+                        <div class="subformdiv">
+                            <lable for="breakfast">csak reggel</lable>
+                            <input id="breakfast" type="radio" name="catering">
+                        </div>
+                        <div class="subformdiv">
+                            <label for="no_catering">nem kér</label>
+                            <input id="no_catering" type="radio" name="catering">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="formdiv">
+                    <label for="message">Egyéb üzenet (maximum 500 karakter)</label>
+                    <br>
+                    <textarea id="message" name="message" rows="5" cols="40" maxlength="500"></textarea>
+                </div>
+                <div class="formdiv" id="submitdiv">
+                    <input type="submit" value="Elküld" id="submitgomb">
+                </div>
+            </form>
+        </aside>
+        <section id="s1">
+            <h2>Balaton</h2>
+            <figure>
+                <picture>
+                    <img src="img/balaton.webp" alt="Balaton">
+                    <figcaption>A Balaton a Badacsonnyal a háttérben</figcaption>
+                </picture>
+            </figure>
+            <p>A Balaton (költői nevén: „a magyar tenger”, becenevén: Balcsi, németül: Plattensee, latinul: Lacus
+                Pelso) egy tó a Dunántúlon, Közép-Európa legnagyobb tava, Magyarország vízrajzának meghatározó eleme.
+                Könnyen felmelegedő, sekély vize kiválóan alkalmassá teszi a fürdésre és sportolásra, élővilága
+                rendkívül gazdag, a táj változatos vulkanikus kúpjaival sok tekintetben egyedi.</p>
+            <p>Típusa geológiailag a Velencei-tóhoz hasonlóan tektonikus eredetű, sekély vizű ároktó. Mintegy 77 km
+                hosszú, legkisebb szélessége Tihanynál 1,5 km, a legnagyobb 18 km Siófok és Balatonfűzfő között,
+                átlagos szélessége 7,7 km, felülete 600 km². Legmélyebb pontja a Tihanyi-szoros legmélyebb árkában az
+                úgynevezett a „Tihanyi-kút”, ahol 11-12,5 méter mély a meder. Más források szerint a kút
+                mélysége 10,67 méter. (A Szántód-Tihany kompjárat útvonalától mintegy 100-150 méterre keletre, a
+                parttól körülbelül 300 méterre helyezkedik el.</p>
+            <p>Az 59 800 hektár területen fekvő vizes élőhely keleti medencéjét a Tihanyi-félsziget választja el a tó
+                többi részétől. Déli partjánál medre sekélyebb. Északi oldalán található a badacsonyi borvidék és a
+                Tapolcai-medence, jellegzetes vulkáni tanúhegyeivel. </p>
+            <p>A Balaton és környéke Budapest mellett az ország turisztikailag leglátogatottabb területe, 2004-ben
+                elnyerte az Örökségünk Somogyország Kincse címet is.[13][14] Környékén gyógyfürdők, termálforrások
+                találhatók. A „Balaton fővárosa” címet hivatalosan Keszthely viseli, de Siófok a déli part, Balatonfüred
+                pedig az északi part fővárosaként tekint magára.[15] A tó környékét a közigazgatási széttagoltság
+                jellemzi, mert három megyéhez, három tervezési-statisztikai régióhoz tartozik.</p>
+            <p>Minden évben megrendezik a tóhoz kapcsolódó három nagy tömegsporteseményt: a tókerülő Kékszalag
+                Nemzetközi Vitorlásversenyt, a Révfülöp–Boglár közötti, a Balatont keresztben átszelő
+                távúszóversenyt,[16][17] legújabban pedig a Fonyód-Badacsony-Fonyód útvonalon bármilyen kézi hajtású
+                vízi járművel, illetve a Zamárdi és Tihany között oda-vissza 8 km távon a Balaton-átevezést.</p>
+        </section>
+        <section id="s2">
+            <h2>Tisza-tó</h2>
+            <figure>
+                <picture>
+                    <img src="img/tisza-to.jpg" alt="Tisza-tó">
+                </picture>
+                <figcaption>Tisza-tó</figcaption>
+            </figure>
+            <p>A Tisza-tó (1988-ig Kiskörei víztározó) Magyarország második legnagyobb tava és legnagyobb
+                mesterséges tava a Tiszán, az Alföld északi részén.[1] Létrehozásának legfontosabb okai a Kiskörei
+                Vízerőmű működéséhez szükséges egyenletes vízhozam biztosítása volt, valamint az ugyanebben az
+                időszakban, Tiszaújvárosban épült Tiszai Hőerőmű hűtővíz igényéhez szükséges magas vízszint biztosítása
+                duzzasztással. </p>
+            <p>1967–1973 között építették fel a Kiskörei Erőművet a duzzasztógáttal a tiszai áradások szabályozása és az
+                Alföld hatékonyabb vízellátása érdekében. A feltöltése 1978-ban fejeződött be. A mesterséges tó vize
+                egykori holtágakat, vízfolyásokat, legelőket, erdőket, szántóföldeket borított el.</p>
+            <p>Azóta kialakult az ökológiája. Változatos növény- és állatvilág talált benne otthonra. A
+                Tiszavalki-medencében madárrezervátum is működik. 1999 óta a Hortobágyi Nemzeti Park
+                bemutatóterületeként az UNESCO világörökség része.</p>
+            <p>A tó feltöltése után először belföldi turisták kezdték el látogatni a tavat, mert sokkal olcsóbb volt a
+                Balatonnál, idővel a falusi turizmus is beindult, a tó körül kempingek, szállodák, strandok épültek. A
+                part mentén hat szabadstrand működik, Tiszafüreden pedig termálfürdők kínálnak fürdési lehetőséget.
+                Abádszalók környékén a vízi sportok széles skálája gyakorolható, beleértve motoros vízi sportokat is. A
+                horgászat a szabályok betartása mellett engedélyezett.</p>
+            <p>A Tisza-tó vadvízi világa gyalog, kerékpárral, lóháton és csónakkal is bejárható. A Tisza-tavi
+                madárrezervátum védett terület, csak vezetővel látogatható.</p>
+            <p>2012-ben nyílt meg Poroszlón a Tisza-tavi Ökocentrum, amely interaktív módon mutatja be a Tisza-tó és a
+                Tisza-völgy természeti értékeit és élővilágát. A látogatóközpont 2600 m²-es főépülete többek között
+                kiállításoknak, rendezvényeknek ad otthont, de kilátó is található itt. A 735 m³ össztérfogatú
+                akváriumrendszer a legnagyobb édesvízű akvárium Európában. A főépületet héthektáros szabadidőpark veszi
+                körül állatbemutatókkal és játszóterekkel; skanzenje a 19. századi életmódot mutatja be. Az ökocentrum
+                kikötőjéből vízitúrák és kishajós kirándulások indulnak</p>
+        </section>
+        <section id="s3">
+            <h2>Szelidi-tó</h2>
+            <figure>
+                <picture>
+                    <img src="img/Szeilidi_to.jpg" alt="Szelidi-tó">
+                </picture>
+                <figcaption>Szelidi-tó</figcaption>
+            </figure>
+            <p>A Szelidi-tó Bács-Kiskun vármegye egyik legjelentősebb turisztikai célpontja, Dunapataj nagyközség
+                közelében, a település határain belül. </p>
+            <p>A Szelidi-tó 5 kilométer hosszú, 150–200 méter széles, 3–4 méter mély, vízfelülete megközelítőleg 80
+                hektár, ezzel hazánk ötödik legnagyobb természetes tava. Bács-Kiskun vármegye Kalocsai járásában,
+                Dunapataj nagyközség külterületén található, mintegy 3 kilométerre Újtelek községtől északra, a
+                Dunapatajt Szakmáron át Kalocsa keleti részeivel összekötő 5308-as útról letérve közelíthető meg. A tó
+                déli partján, nyugalomba jutott futóhomok területein kellemes strandok kerültek kialakításra. </p>
+            <p>A tó a nevét a víz közvetlen közelében fekvő faluról, illetve annak pusztulása után a közelben elterülő
+                szántóföldi művelésre alkalmas Szelid pusztáról kapta. Szelid falucska a török adóösszeírások szerint az
+                1540-es években 20-25 családból állt (kb. 100 fő), eszerint átlagos alföldi magyar falu lehetett. A 16.
+                század második felében elpusztult; határát onnantól, mint pusztát mindig a patajiak művelték és mindig
+                Patajhoz tartozott.</p>
+            <p>A tó nevét legendák is magyarázzák. Az egyik szerint Szelid neve a közeli Várdomb erődítményével és a
+                török hódoltság harcaival függhet össze, ugyanis a török csapatok a magyar túlerőt látva, megállásra és
+                kompromisszumokra kényszerültek, 'megszelídültek' ezen a területen. Egy másik legenda szerint Bence
+                vitéz úgy meghajszolta lovait, hogy azok patái elvástak. De miután a lovak hosszasan a tó vizében állva
+                ittak, sebeik gyorsan rendbe jöttek. A legvalószínűbb, hogy a tó neve egyáltalán nincs összefüggésben a
+                szelíd melléknévvel. Minden bizonnyal a szel magyar igetőből származik.</p>
+            <p>A tavat még a Duna vize mélyítette ki évezredekkel ezelőtt. Jelenleg 5 kilométer hosszú, szélessége
+                átlagosan 150–200 méter között mozog, átlagos vízmélysége 3–4 méter, vize nyáron akár 28 °C-ra is
+                felmelegedhet, így fürdőzésre kiválóan alkalmas. A talajból sok nátrium-magnézium-karbonát és
+                nátrium-jodid oldódik ki, ezért már a középkorban is sebgyógyításra használták, ma inkább idegrendszeri,
+                hormonális és reumatikus bántalmak kezelésére ajánlják. Vize szagtalan (a gyógyfürdőkkel ellentétben),
+                jelenleg még nem minősített gyógyvíz, ezért üdülőfalu létesült a környezetében.</p>
+        </section>
+        <footer></footer>
     </div>
-  </body>
+</body>
 </html>
