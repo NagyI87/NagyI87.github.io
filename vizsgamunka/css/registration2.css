@@ -1,0 +1,136 @@
+#SentenceAbove {
+    font-size: 40px;
+    margin: 20px 0 40px 0;
+
+}
+
+#PicContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+#ProgressPicture {
+    display: flex;  
+    
+}
+
+.BlueCube {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #7eace0;
+    color: white;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+
+}
+
+.ProgressCapture {
+    text-align: center;
+}
+
+#RightArrowIcon {
+    height: 50px;
+    width: auto;
+    margin: 0 0 auto 0;   
+    
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto 25px auto;
+    background-color: white;    
+    border: #4690e7 1px solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px; 
+    padding: 20px;   
+}
+
+
+label {
+    font-weight: bold;
+
+}
+
+#ClientCompanyName {
+    font-size: 20px;
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+#ClientTaxID {
+    font-size: 20px;
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+
+input {
+    background-color: rgb(175, 174, 174);
+    margin: 15px 0;
+}    
+
+
+#SubmitContainer {
+    display: flex;
+    justify-content: right;
+    
+}
+
+#Submitbutton {
+    background-color: rgb(231, 161, 31);
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;    
+
+}
+
+#Submitbutton:hover {
+    background-color: #4690e7;
+    
+}
+
+#Submitbutton:hover a {
+    color: white;
+}
+
+#Submitbutton a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#InformingText {
+    color: #707070;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#RegistIllustration1 {
+    width: 50%;
+    height: auto;
+
+}
+
+#PicContainer1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ezt kell cserélgetni */
+
+#Step2 .BlueCube {
+    background-color: blue;
+
+}
+
+#Step2 .ProgressCapture{    
+    font-weight: bold;
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/registration2.css">
+    <link rel="icon" type="image/x-icon" href="img/logoWithoutText.png">     
+    <!--Open Sans betűkészlet-->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!---->
+    <meta name="robots" content="noindex, nofollow">
+    <title>Grosteven - regisztráció 2. lépés</title>
+</head>
+<body>
+   <header>
+        <nav class="nav">
+            <div class="LogoContainer">
+                <div class="logo"><a href="index.html"><img src="img/logoWithoutText.png" alt="Grosteven logo" class="logopicture"></a></div>
+                <div class="CompanyName"><a href="index.html">Grosteven Könyvelőiroda</a></div>
+            </div>
+            <ul class="NavUl">
+                <li><a href="soletrader.html">Egyéni vállalkozók</a></li>
+                <li><a href="businesent.html">Gazdasági társaságok</a></li>
+                <li><a href="404.html">Hasznos tudnivalók</a></li>
+                <li><a href="404.html">Kapcsolat</a> </li>
+            </ul>
+            <div class="Hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <div class="MainContainer">
+        <p id="SentenceAbove">Második lépésként a céges adataid szükségesek</p>
+        <div id="PicContainer">                  
+            <div id="ProgressPicture">
+                <div class="ProgressStep" id="Step1">
+                    <div class="BlueCube">
+                        <p>Ok</p>
+                    </div>
+                    <div class="ProgressCapture">Belépési adatok</div>                   
+                </div>
+                <div class="RightArrow"><img src="img/arrow_right_icon.svg" alt="nyíl" id="RightArrowIcon"></div>     
+                <div class="ProgressStep" id="Step2">
+                    <div class="BlueCube">
+                        <p>2</p>
+                    </div>
+                    <div class="ProgressCapture">Céges Adatok</div>               
+                </div>  
+                <div class="RightArrow"><img src="img/arrow_right_icon.svg" alt="nyíl" id="RightArrowIcon"></div>
+                    <div class="ProgressStep" id="Step3">
+                    <div class="BlueCube">
+                        <p>3</p>
+                    </div>
+                    <div class="ProgressCapture">Kapcsolatartó<br>adatok</div>               
+                </div> 
+            </div>                       
+        </div>
+        <form>
+            <div class="formdiv"><label for="ClientCompanyName">Céged vagy egyéni vállalkozói megnevezésed:</label></div> 
+            <div class="formdiv"><input id="ClientCompanyName" type="text" name="ClientCompanyName" required placeholder="pl.: Példa Kft., Kiss József e.v."></div>
+            <div class="formdiv"><label for="ClientTaxID">Adószám:</label></div> 
+            <div class="formdiv"><input id="ClientTaxID" type="text" name="ClientTaxID" required placeholder="xxxxxxxx-y-zz"></div>
+            <div id="SubmitContainer"><button id="Submitbutton"><a href="registration3.html">Tovább</a></button></div> 
+            <p id="InformingText">A vállalkozásod adószáma nem keverendő össze a személyes adóazonosító jeleddel. Az adószám 11 számjegyből áll és három részre van osztva.</p>
+        </form>
+    </div>
+    <footer>
+        <div class="FooterContainer">
+            <div class="Footerflex">
+                <div class="LogoContainer">
+                <div class="logo"><a href="index.html"><img src="img/Darklogo.png" alt="Grosteven logo" class="logopicture"></a></div>
+                <div class="CompanyName"><a href="index.html">Grosteven Könyvelőiroda</a></div>
+                </div>
+                    <div class="OtherFooterContent">
+                        <ul>
+                            <li>Adatvédelmi szabályzat</li>
+                            <li>Süti szabályzat</li>
+                        </ul>
+                    </div>
+                    <div class="ContactContainer"> 
+                    <h2>Kapcsolat</h2>       
+                    <div class="TelephoneContact">
+                        <p>Telefon:</p>
+                        <p><a href="tel:+36302249556">+36 30 2249 556</a></p>
+                    </div>
+                    <div class="EmailContact">
+                        <p>Email:</p>
+                        <p><a href="mailto:hello@grosteven.hu">hello@grosteven.hu</a></p>
+                    </div>
+                    <img src="img/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebooklogo" id="Facebooklogo">
+                </div>
+            </div>    
+        <p class="ending">Grosteven Kft. - 2025</p>
+        </div>
+    </footer>   
+    <script src="main.js"></script>
+</body>
+</html>
+    

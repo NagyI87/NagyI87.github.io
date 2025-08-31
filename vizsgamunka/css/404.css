@@ -1,0 +1,16 @@
+#s404 p {
+    font-size: 2rem;
+    margin: 30px auto 15px auto;
+    text-align: center;
+}
+
+#s404 div {
+    display: flex;
+    justify-content: center;
+}
+
+#picture404 {
+    width: 50%;
+    height: auto;
+    margin: 15px auto 30px auto;
+}
